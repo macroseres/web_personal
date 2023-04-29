@@ -199,8 +199,6 @@ header .navbar ul li a:hover{
 }
 
 
-
-
 .teaching .box-container{
     display: flex;
     align-items: center;
@@ -235,7 +233,6 @@ header .navbar ul li a:hover{
 }
 
 
-
 .publications .box-container{
     display: flex;
     align-items: center;
@@ -263,7 +260,6 @@ header .navbar ul li a:hover{
 .publications .box-container ol li p span{
     font-style: italic;
 }
-
 
 
 .students .box-container{
@@ -310,16 +306,6 @@ header .navbar ul li a:hover{
 }
 
 
-
-
-
-
-
-
-
-
-
-
 .contact .content{
     flex: 1 1 30rem;
     padding-bottom: 2rem;
@@ -363,26 +349,6 @@ header .navbar ul li a:hover{
     font-size: 4rem;
     color: var(--escuro);
 }
-
-
-
-
-
-
-
-
-@media (max-height:768){
-
-}
-
-
-
-
-
-
-
-
-
 
 
 /* media queries */
