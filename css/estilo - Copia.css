@@ -1,11 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&display=swap');
 
 :root{
-    --branco1: #f5e8e7;
-    --branco2: #edb88b;
-    --branco3: #17bebb;
-    --escuro: #2e282a;
-    --amarelo: #cd5334;
+    --yellow:#f9ca24;
 }
 
 *{
@@ -19,8 +15,8 @@
 }
 
 *::selection{
-    background: var(--amarelo);
-    color: var(--branco1);
+    background: var(--yellow);
+    color: #333;
 }
 
 html{
@@ -33,15 +29,15 @@ html::-webkit-scrollbar{
 }
 
 html::-webkit-scrollbar-track{
-    background: var(--branco1);
+    background: #222;
 }
 
 html::-webkit-scrollbar-thumb{
-    background: var(--amarelo);
+    background: var(--yellow);
 }
 
 body{
-    background: var(--branco1);
+    background: #111;
     overflow-x: hidden;
     padding-left: 35rem;
 }
@@ -53,8 +49,8 @@ section{
 
 .btn{
     padding: .7rem 3rem;
-    background: var(--branco2);
-    color: var(--escuro);
+    background: #333;
+    color: #fff;
     cursor: pointer;
     margin-top: 1rem;
     font-size: 2rem;
@@ -68,8 +64,7 @@ section{
 }
 
 .btn:hover{
-    background: var(--amarelo);
-    color: var(--branco1);
+    background: var(--yellow);
 }
 
 .heading{
@@ -77,13 +72,13 @@ section{
     margin: 0 6rem;
     font-size: 4rem;
     padding: 1rem;
-    border-bottom: .3rem solid var(--branco3);
-    color: var(--escuro);
+    border-bottom: .1rem solid #fff4;
+    color: #fff;
     text-transform: capitalize;
 }
 
 .heading span{
-    color: var(--amarelo);
+    color: var(--yellow);
 }
 
 .subheading{
@@ -91,13 +86,13 @@ section{
     margin: 0 6rem;
     font-size: 2rem;
     padding: 1rem;
-    border-bottom: .1rem solid var(--branco3);
-    color: var(--escuro);
+    border-bottom: .1rem solid #fff4;
+    color: #fff;
     text-transform: uppercase;
 }
 
 .subheading span{
-    color: var(--amarelo);
+    color: var(--yellow);
 }
 
 header{
@@ -106,7 +101,7 @@ header{
     z-index: 1000;
     height: 100%;
     width: 35rem;
-    background: var(--branco2);
+    background: #1a1a1a;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -120,17 +115,17 @@ header .user img{
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
-    border:.7rem solid var(--amarelo);
+    border:.7rem solid var(--yellow);
 }
 
 header .user .name{
     font-size: 3.5rem;
-    color: var(--escuro);
+    color: #fff;
 }
 
 header .user .post{
     font-size: 2rem;
-    color: var(--escuro);
+    color: #eee;
 }
 
 header .navbar{
@@ -147,22 +142,21 @@ header .navbar ul li a{
     display: block;
     padding: 1rem;
     margin: 1.5rem 0;
-    background: var(--branco1);
-    color: var(--escuro);
+    background: #333;
+    color: #fff;
     font-size: 2rem;
     border-radius: 5rem;
 }
 
 header .navbar ul li a:hover{
-    background: var(--amarelo);
-    color: var(--branco1);
+    background: var(--yellow);
 }
 
 #menu{
     position: fixed;
     top: 2rem; right: 2rem;
-    background: var(--branco1);
-    color: var(--escuro);
+    background: #333;
+    color: #fff;
     cursor: pointer;
     font-size: 2.5rem;
     padding: 1rem 1.5rem;
@@ -179,21 +173,21 @@ header .navbar ul li a:hover{
 
 .home h3{
     font-size: 2.5rem;
-    color: var(--escuro);
+    color: #fff;
 }
 
 .home h1{
     font-size: 5rem;
-    color: var(--escuro);
+    color: #fff;
 }
 
 .home h1 span{
-    color: var(--amarelo);
+    color: var(--yellow);
 }
 
 .home p{
     font-size: 2rem;
-    color: var(--escuro);
+    color: #eee;
     padding: 1rem 0;
 }
 
@@ -210,10 +204,10 @@ header .navbar ul li a:hover{
 }
 
 .teaching .box-container ul{
-    font-size: 1.5rem;
     list-style: square;
-    padding: 1rem 6rem;
-    color: var(--escuro);
+    padding: 1rem 3rem;
+    color: #fff;
+    padding-left: 8rem;
 }
 
 .teaching .box-container ul li{
@@ -221,92 +215,21 @@ header .navbar ul li a:hover{
 }
 
 .teaching .box-container ul li p{
-    font-size: 1.5rem;
-    color: var(--escuro);
+    font-size: 1.4rem;
+    color: #eee;
+    padding-top: 1rem 0;
 }
 
 .teaching .box-container ul li p span{
     font-size: 1.3rem;
-    background: var(--branco2);
-    color: var(--escuro);
+    background: #222;
+    color: #fff;
     border-radius: 1rem;
     padding: .5rem 1.5rem;
 }
 
 
 
-.publications .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 1rem 0;
-    padding-left: 3rem;
-}
-
-.publications .box-container ol{
-    font-size: 1.5rem;
-    padding: 1rem 6rem;
-    color: var(--escuro);
-}
-
-.publications .box-container ol li{
-    padding: 1rem;
-}
-
-.publications .box-container ol li p{
-    font-size: 1.5rem;
-    color: var(--escuro);
-}
-
-.publications .box-container ol li p span{
-    font-style: italic;
-}
-
-
-
-.students .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 1rem 0;
-    padding-left: 3rem;
-}
-
-.students .box-container ol{
-    font-size: 1.5rem;
-    padding: 1rem 6rem;
-    color: var(--amarelo);
-}
-
-.students .box-container ol li{
-    padding: 1rem;
-}
-
-.students .box-container ol li p{
-    font-size: 1.5rem;
-    color: var(--escuro);
-}
-
-.students .box-container ol li p span{
-    font-style: italic;
-}
-
-.students .box-container ol li p a{
-    background: var(--branco2);
-    color: var(--escuro);
-    cursor: pointer;
-    border-radius: 3rem;
-    text-transform: capitalize;
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.students .box-container ol li p a:hover{
-    background: var(--amarelo);
-    color: var(--branco1);
-}
 
 
 
@@ -319,41 +242,48 @@ header .navbar ul li a:hover{
 
 
 
-.contact .content{
-    flex: 1 1 30rem;
-    padding-bottom: 2rem;
+
+.contact .row{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.contact .content h3{
+.contact .row .content{
+    flex: 1 1 30rem;
+    padding: 4rem;
+    padding-bottom: 0;
+}
+
+.contact .row .content .title{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+.contact .row .content .info h3{
     display: flex;
     align-items: center;
     font-size: 2rem;
-    color: var(--escuro);
+    color: #eee;
     padding: 1rem 0;
     font-weight: normal;
 }
 
-.contact .content h3 i{
+.contact .row .content .info h3 i{
     padding-right: 1rem;
-    color: var(--amarelo);
+    color: var(--yellow);
 }
 
-.contact .map{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 2rem;
+.contact .row .map{
+    padding: 1rem;
 }
 
 .top{
     position: fixed;
-    bottom: 7.5rem; 
-    right: 2rem;
+    bottom: 7.5rem; right: 2rem;
     z-index: 100;
     display: none;
 }
