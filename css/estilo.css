@@ -102,7 +102,8 @@ section{
 
 header{
     position: fixed;
-    top: 0; left: 0;
+    top: 0; 
+    left: 0;
     z-index: 1000;
     height: 100%;
     width: 35rem;
@@ -124,12 +125,12 @@ header .user img{
 }
 
 header .user .name{
-    font-size: 3.5rem;
+    font-size: 2.4rem;
     color: var(--escuro);
 }
 
 header .user .post{
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--escuro);
 }
 
@@ -178,12 +179,12 @@ header .navbar ul li a:hover{
 }
 
 .home h3{
-    font-size: 2.5rem;
+    font-size: 2.4rem;
     color: var(--escuro);
 }
 
 .home h1{
-    font-size: 5rem;
+    font-size: 4rem;
     color: var(--escuro);
 }
 
@@ -226,11 +227,11 @@ header .navbar ul li a:hover{
 }
 
 .teaching .box-container ul li p span{
-    font-size: 1.3rem;
     background: var(--branco2);
     color: var(--escuro);
-    border-radius: 1rem;
-    padding: .5rem 1.5rem;
+    border-radius: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 
@@ -353,9 +354,25 @@ header .navbar ul li a:hover{
 .top{
     position: fixed;
     bottom: 7.5rem; 
-    right: 2rem;
+    right: 4rem;
     z-index: 100;
     display: none;
+}
+
+.top i{
+    font-size: 4rem;
+    color: var(--escuro);
+}
+
+
+
+
+
+
+
+
+@media (max-height:768){
+
 }
 
 
@@ -368,17 +385,8 @@ header .navbar ul li a:hover{
 
 
 
-
-
-
-
-
-
-
-
-
 /* media queries */
-@media (max-width:1200px){
+@media (max-width:1366px){
 
     html{
         font-size: 55%;
